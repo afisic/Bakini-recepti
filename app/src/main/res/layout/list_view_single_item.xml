@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/primaryLightColor"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/image_tmb"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="left"
+        android:textColor="@color/primaryTextColor" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/primaryLightColor"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="2dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20dp"
+            android:maxLength="30"/>
+
+        <TextView
+            android:id="@+id/servings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/primaryTextColor"
+            android:paddingBottom="5dp"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/readyInMinutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="2dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

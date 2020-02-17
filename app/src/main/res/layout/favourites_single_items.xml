@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primaryLightColor">
+
+    <EditText
+        android:id="@+id/ingAmountFav"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text=""
+        android:textAlignment="center"
+        android:background="@color/primaryLightColor"
+        android:textColor="@color/secondaryTextColor"
+        android:longClickable="true"/>
+
+    <Button
+        android:id="@+id/plusFav"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/ingAmountFav"
+        android:background="@drawable/button_plus_minus"
+        android:text="+"
+        android:layout_marginLeft="10dp"
+        android:longClickable="true"/>
+
+    <Button
+        android:id="@+id/minusFav"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/plusFav"
+        android:background="@drawable/button_plus_minus"
+        android:text="-"
+        android:layout_marginLeft="5dp"
+        android:longClickable="true"/>
+
+    <TextView
+        android:id="@+id/ingUnitFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/minusFav"
+        android:text="unit"
+        android:textSize="18dp"
+        android:background="@color/primaryLightColor"
+        android:layout_marginLeft="10dp"
+        android:longClickable="true"/>
+
+    <TextView
+        android:id="@+id/ingNameFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/ingUnitFav"
+        android:text="name"
+        android:background="@color/primaryLightColor"
+        android:layout_marginLeft="10dp"
+        android:textSize="18dp"
+        android:longClickable="true"/>
+
+
+
+</RelativeLayout>
